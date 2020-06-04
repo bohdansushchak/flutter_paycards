@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wocr_hint_position_card_in_frame">Umieść swoją kartę w ramce</string>
+    <string name="wocr_button_enter_card_number">Wprowadź szczegóły karty ręcznie</string>
+    <string name="wocr_toggle_flash">Przełącz lampę błyskową</string>
+</resources>

@@ -23,7 +23,7 @@ class CardRectCoordsMapper {
 
     private static final PointF DEFAULT_CARD_HOLDER_POS = new PointF(33f,364f);
 
-    private static final float DEFAULT_CARD_NUMBER_FONT_SIZE = 40;
+    private static final float DEFAULT_CARD_NUMBER_FONT_SIZE = 36;
 
     private static final float DEFAULT_CARD_DATE_FONT_SIZE = 27;
 
@@ -67,7 +67,7 @@ class CardRectCoordsMapper {
 
     private int mTranslateX = 0;
     private int mTranslateY = 0;
-    private float mScale = 1;
+    private float mScale = 0.9f;
 
     private boolean mCameraRectInitialized;
 
@@ -189,10 +189,10 @@ class CardRectCoordsMapper {
     }
 
     private void refreshCardRect() {
-        mCardRect.left = (int) (0.5f + mScale * mCardCameraRect.left) + mTranslateX;
-        mCardRect.top = (int) (0.5f + mScale * mCardCameraRect.top) + mTranslateY;
-        mCardRect.right = (int) (0.5f + mScale * mCardCameraRect.right) + mTranslateX;
-        mCardRect.bottom = (int) (0.5f + mScale * mCardCameraRect.bottom) + mTranslateY;
+        mCardRect.left = (int) (0.5f + mScale * mCardCameraRect.left) + mTranslateX + 70;
+        mCardRect.top = (int) (0.5f + mScale * mCardCameraRect.top) + mTranslateY + 20;
+        mCardRect.right = (int) (0.5f + mScale * mCardCameraRect.right) + mTranslateX - 70;
+        mCardRect.bottom = (int) (0.5f + mScale * mCardCameraRect.bottom) + mTranslateY - 20;
     }
 
     private void refreshCardTextPositions() {
